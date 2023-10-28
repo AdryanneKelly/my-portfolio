@@ -1,8 +1,147 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
+import Vampiro from '../images/vampiro.png'
+import Mysql from '../images/mysql-white.svg'
+import Php from '../images/php.svg'
+import Laravel from '../images/laravel-logo.svg'
+import Flutter from '../images/flutter.svg'
+import Bootstrap from '../images/bootstrap.svg'
+import Html from '../images/html.svg'
+import StackIcons from '../components/StackIcons.astro'
+import EvilBat from '../images/evil-bat.svg'
+import Photo from '../images/profile.png'
+import VampireLips from '../images/vampire-lips.svg'
+import HorrorCastle from '../images/horror-castle.svg'
+import Facebook from '../images/facebook.svg'
+import WhatsApp from '../images/whatsapp.svg'
+import Linkedin from '../images/linkedin.svg'
+import Instagram from '../images/instagram.svg'
+import Github from '../images/github.svg'
 ---
 
 <Layout title="Adryanne Kelly | Portifólio">
   <Header />
+  <div
+    class="max-w-full h-screen px-4 py-6 bg-[url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0545aac2-256b-4c9e-907a-1b1c8ef246de/dgc6ggs-e14f7965-43cb-4f2e-8184-14f925f301bf.png/v1/fill/w_1280,h_718,q_80,strp/fantasy_desktop_wallpaper_0421_by_grimwalds_ai_fantasy_dgc6ggs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMDU0NWFhYzItMjU2Yi00YzllLTkwN2EtMWIxYzhlZjI0NmRlXC9kZ2M2Z2dzLWUxNGY3OTY1LTQzY2ItNGYyZS04MTg0LTE0ZjkyNWYzMDFiZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SUh1-TwtpSchtCd8mcOmp77a2kxEysoth9Et-jm-OCc)] bg-cover"
+  >
+    <div class="flex justify-around pt-44">
+      <div class="text-white py-12">
+        <div>
+          <h1 class="text-6xl">Adryanne Kelly</h1>
+          <h1 class="text-3xl">Software Developer</h1>
+        </div>
+        <div>
+          <h1 class="text-xl">Bem vindos ao meu castelo!</h1>
+          <h1 class="text-xl">
+            Você já pode explorá-lo, eu recomendo que não se esqueça de trazer
+            alho e um crucifixo.
+          </h1>
+          <h1 class="text-xl">Só pra garantir!</h1>
+        </div>
+        <div class="inline-flex flex-row gap-2 py-3">
+          <div class="border-2 rounded-full hover:bg-hoverRedSecondaryColor">
+            <a href="">
+              <img src={Instagram.src} alt="" class="h-10 px-2 py-2" />
+            </a>
+          </div>
+          <div class="border-2 rounded-full hover:bg-hoverRedSecondaryColor">
+            <a href="">
+              <img src={Linkedin.src} alt="" class="h-10 px-2 py-2" />
+            </a>
+          </div>
+          <div class="border-2 rounded-full hover:bg-hoverRedSecondaryColor">
+            <a href="">
+              <img src={Github.src} alt="" class="h-10 px-2 py-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- <img
+          src="https://static.papayaplay.com/static/assets/images/latale/portal/update/goddess_pt2/story/story_character2.png"
+          alt=""
+          class="h-[490px]"
+        /> -->
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bg-black w-full flex justify-center py-5">
+      <div class="flex flex-col text-white">
+        <img src={EvilBat.src} alt="" class="h-14" />
+        <h1 class="text-4xl">Sobre mim</h1>
+      </div>
+    </div>
+    <div>
+      <div class="bg-black w-full flex justify-around py-5 text-white">
+        <div class="flex flex-col gap-2 w-[700px]">
+          <h1 class="text-xl font-medium first-letter:text-5xl">
+            Eu estava no ensino médio quando vi o primeiro código HTML e a
+            maldição recaiu sobre mim e é claro como a maioria dos seres
+            amaldiçoados me formei como Técnica em Informática. Mas não parou
+            por ai, pouco depois esbarrei numa faculdade de Análise e
+            Desenvolvimento de Sistemas na qual atualmente sou graduada. E
+            então, quando se achou que já bastava iniciei minha Pós-Graduação em
+            Engenharia de Software e estou cursando-a atualmente.
+          </h1>
+          <h1 class="text-xl font-medium">
+            Nas minhas andanças como um ser da noite, sinto informá-lo, caro
+            leitor, mas me tornei usuária de PHP, uso Laravel e FilamentPHP tem
+            um sabor incomparável. Além disso, em minhas caminhadas pelo jardim
+            do castelo, descobri o Flutter e estou aprendendo como posso
+            saboreá-lo da melhor forma.
+          </h1>
+        </div>
+
+        <img src={Photo.src} alt="" class="h-96" />
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white w-full flex justify-center py-5">
+    <div class="flex flex-col text-center">
+      <img src={HorrorCastle.src} alt="" class="h-14" />
+      <h1 class="text-4xl">Experiência profissional</h1>
+    </div>
+  </div>
+  <div class="bg-white w-full flex justify-around py-5">
+    <div>
+      <h1 class="text-2xl font-semibold">Analista de Sistemas</h1>
+      <h2>Orbe Telecom</h2>
+      <h2>03/2023 - present</h2>
+      <div class="h-1 w-full bg-redPrimaryColor my-5 rounded-full"></div>
+    </div>
+    <div></div>
+  </div>
+  <div class="bg-white w-full flex justify-around py-5">
+    <div></div>
+    <div>
+      <h1 class="text-2xl font-semibold">Técnica em Informática</h1>
+      <h2>Cisvale</h2>
+      <h2>esqueci - 03/2023</h2>
+      <div class="h-1 w-full bg-redPrimaryColor my-5 rounded-full"></div>
+    </div>
+  </div>
+  <div
+    class="bg-[url(https://i.pinimg.com/originals/06/a4/8f/06a48fb055f53727feb43e69daf841f8.jpg)] bg-cover w-full flex justify-center py-5"
+  >
+    <div class="flex flex-col text-center text-white">
+      <img src={VampireLips.src} alt="" class="h-14" />
+      <h1 class="text-4xl">Stacks</h1>
+      <div class="inline-flex flex-row gap-5 py-10">
+        <StackIcons src={Php.src} />
+        <StackIcons src={Laravel.src} />
+        <StackIcons src={Mysql.src} />
+        <StackIcons src={Html.src} />
+        <StackIcons src={Bootstrap.src} />
+        <StackIcons src={Flutter.src} />
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="bg-black flex justify-center text-white py-5">
+      Adryanne Kelly | Software Developer - 2023
+    </div>
+  </footer>
 </Layout>
