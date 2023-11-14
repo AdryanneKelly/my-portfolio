@@ -20,6 +20,7 @@ import Instagram from '../images/instagram.svg'
 import Github from '../images/github.svg'
 import Bats from '../images/bats.svg'
 import ProjectCard from '../components/ProjectCard.astro'
+import BloodGif from '../images/blood.gif'
 ---
 
 <Layout title="Adryanne Kelly | Portifólio">
@@ -27,34 +28,48 @@ import ProjectCard from '../components/ProjectCard.astro'
   <div
     class="max-w-full h-screen px-4 py-6 bg-[url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0545aac2-256b-4c9e-907a-1b1c8ef246de/dgc6ggs-e14f7965-43cb-4f2e-8184-14f925f301bf.png/v1/fill/w_1280,h_718,q_80,strp/fantasy_desktop_wallpaper_0421_by_grimwalds_ai_fantasy_dgc6ggs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMDU0NWFhYzItMjU2Yi00YzllLTkwN2EtMWIxYzhlZjI0NmRlXC9kZ2M2Z2dzLWUxNGY3OTY1LTQzY2ItNGYyZS04MTg0LTE0ZjkyNWYzMDFiZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SUh1-TwtpSchtCd8mcOmp77a2kxEysoth9Et-jm-OCc)] bg-cover"
   >
-    <div class="flex justify-around pt-44">
-      <div class="text-white py-12">
+    <div
+      class="flex justify-between pt-24 px-32 max-md:px-12 max-sm:px-5 max-sm:pt-16"
+    >
+      <div class="flex flex-col gap-5 text-white py-12 max-w-sm">
         <div>
-          <h1 class="text-6xl">Adryanne Kelly</h1>
-          <h1 class="text-3xl">Software Developer</h1>
+          <h1 class="text-6xl font-semibold">Adryanne Kelly</h1>
         </div>
+        <h1 class="text-3xl font-semibold">Software Developer</h1>
         <div>
           <h1 class="text-xl">Bem vindos ao meu castelo!</h1>
           <h1 class="text-xl">
             Você já pode explorá-lo, eu recomendo que não se esqueça de trazer
             alho e um crucifixo.
           </h1>
-          <h1 class="text-xl">Só pra garantir!</h1>
         </div>
         <div class="inline-flex flex-row gap-2 py-3">
-          <div class="border-2 rounded-full hover:bg-hoverRedSecondaryColor">
+          <div>
+            <div
+              class="border-2 border-redPrimaryColor rounded-lg bg-redPrimaryColor hover:bg-hoverRedSecondaryColor"
+            >
+              <a href="">
+                <div class="flex flex-inline px-3 max-sm:px-0">
+                  <img src={Instagram.src} alt="" class="h-12 px-3 py-3" />
+                  <h1 class="text-2xl py-2 px-3 max-sm:hidden">Instagram</h1>
+                </div>
+              </a>
+            </div>
+            <img src={BloodGif.src} alt="" class="absolute w-36 max-sm:w-12" />
+          </div>
+
+          <div
+            class="border-solid border-2 border-redPrimaryColor rounded-lg bg-hoverRedSecondaryColor hover:bg-redPrimaryColor bg-opacity-70"
+          >
             <a href="">
-              <img src={Instagram.src} alt="" class="h-10 px-2 py-2" />
+              <img src={Linkedin.src} alt="" class="h-12 px-2 py-2" />
             </a>
           </div>
-          <div class="border-2 rounded-full hover:bg-hoverRedSecondaryColor">
+          <div
+            class="border-solid border-2 rounded-lg border-redPrimaryColor bg-hoverRedSecondaryColor hover:bg-redPrimaryColor bg-opacity-60"
+          >
             <a href="">
-              <img src={Linkedin.src} alt="" class="h-10 px-2 py-2" />
-            </a>
-          </div>
-          <div class="border-2 rounded-full hover:bg-hoverRedSecondaryColor">
-            <a href="">
-              <img src={Github.src} alt="" class="h-10 px-2 py-2" />
+              <img src={Github.src} alt="" class="h-12 px-3 py-3" />
             </a>
           </div>
         </div>
@@ -68,17 +83,23 @@ import ProjectCard from '../components/ProjectCard.astro'
       </div>
     </div>
   </div>
-  <div>
-    <div class="bg-black w-full flex justify-center py-5">
+  <div
+    class="bg-black h-screen max-sm:h-auto max-md:h-auto lg:h-auto max-lg:h-auto"
+  >
+    <div class="w-full flex justify-center pt-5 pb-5">
       <div class="flex flex-col text-white">
-        <img src={EvilBat.src} alt="" class="h-14" />
-        <h1 class="text-4xl">Sobre mim</h1>
+        <img src={EvilBat.src} alt="" class="h-16" />
+        <h1 class="text-4xl">Crônicas de Sangue</h1>
       </div>
     </div>
     <div>
-      <div class="bg-black w-full flex justify-around py-5 text-white">
-        <div class="flex flex-col gap-2 w-[700px]">
-          <h1 class="text-xl font-medium first-letter:text-5xl">
+      <div
+        class="w-full flex max-sm:flex-col max-md:flex-col justify-between py-5 text-white px-36 max-md:px-12 max-sm:px-5 max-lg:flex-col max-lg:px-16 pb-20"
+      >
+        <div
+          class="flex flex-col gap-3 w-[600px] text-2xl max-sm:w-auto max-sm:text-lg max-sm:pb-3 max-lg:pb-4 max-lg:text-center max-lg:w-auto"
+        >
+          <h1 class="first-letter:text-5xl break-words">
             Eu estava no ensino médio quando vi o primeiro código HTML e a
             maldição recaiu sobre mim e é claro como a maioria dos seres
             amaldiçoados me formei como Técnica em Informática. Mas não parou
@@ -87,7 +108,7 @@ import ProjectCard from '../components/ProjectCard.astro'
             então, quando se achou que já bastava iniciei minha Pós-Graduação em
             Engenharia de Software e estou cursando-a atualmente.
           </h1>
-          <h1 class="text-xl font-medium">
+          <h1 class="first-letter:text-5xl break-words">
             Nas minhas andanças como um ser da noite, sinto informá-lo, caro
             leitor, mas me tornei usuária de PHP, uso Laravel e FilamentPHP tem
             um sabor incomparável. Além disso, em minhas caminhadas pelo jardim
@@ -96,7 +117,11 @@ import ProjectCard from '../components/ProjectCard.astro'
           </h1>
         </div>
 
-        <img src={Photo.src} alt="" class="h-96" />
+        <img
+          src={Photo.src}
+          alt=""
+          class="h-[425px] mb-10 max-sm:h-auto max-md:h-auto max-lg:h-auto"
+        />
       </div>
     </div>
   </div>
@@ -107,31 +132,34 @@ import ProjectCard from '../components/ProjectCard.astro'
       <h1 class="text-4xl">Experiência profissional</h1>
     </div>
   </div>
-  <div class="bg-white w-full flex justify-around py-5">
+  <div class="bg-white w-full flex justify-between py-5 px-36 max-sm:px-3">
     <div>
-      <h1 class="text-2xl font-semibold">Analista de Sistemas</h1>
-      <h2>Orbe Telecom</h2>
+      <h1 class="text-3xl font-semibold">Analista de Sistemas</h1>
+      <h2 class="font-semibold text-xl">Orbe Telecom</h2>
       <h2>03/2023 - present</h2>
-      <div class="h-1 w-full bg-redPrimaryColor my-5 rounded-full"></div>
+      <div class="h-1 w-full bg-redPrimaryColor my-5 rounded-full text-lg">
+      </div>
     </div>
     <div></div>
   </div>
-  <div class="bg-white w-full flex justify-around py-5">
+  <div class="bg-white w-full flex justify-between py-5 px-36 max-sm:px-3">
     <div></div>
     <div>
-      <h1 class="text-2xl font-semibold">Técnica em Informática</h1>
-      <h2>Cisvale</h2>
+      <h1 class="text-3xl font-semibold">Técnica em Informática</h1>
+      <h2 class="font-semibold text-xl">Cisvale</h2>
       <h2>esqueci - 03/2023</h2>
       <div class="h-1 w-full bg-redPrimaryColor my-5 rounded-full"></div>
     </div>
   </div>
   <div
-    class="bg-[url(https://i.pinimg.com/originals/06/a4/8f/06a48fb055f53727feb43e69daf841f8.jpg)] bg-cover w-full flex justify-center py-5"
+    class="bg-[url(https://i.pinimg.com/originals/06/a4/8f/06a48fb055f53727feb43e69daf841f8.jpg)] bg-cover w-full flex justify-center pt-5"
   >
-    <div class="flex flex-col text-center text-white">
+    <div class="flex flex-col text-center text-white max-sm:items-center">
       <img src={VampireLips.src} alt="" class="h-14" />
-      <h1 class="text-4xl">Stacks</h1>
-      <div class="inline-flex flex-row gap-5 py-10">
+      <h1 class="text-4xl">Presas</h1>
+      <div
+        class="inline-flex flex-row gap-5 pt-10 max-sm:flex-col"
+      >
         <StackIcons src={Php.src} />
         <StackIcons src={Laravel.src} />
         <StackIcons src={Mysql.src} />
@@ -139,19 +167,25 @@ import ProjectCard from '../components/ProjectCard.astro'
         <StackIcons src={Bootstrap.src} />
         <StackIcons src={Flutter.src} />
       </div>
+      <div class="bg-gray-400 h-2 w-full rounded-t-lg"></div>
     </div>
   </div>
 
   <div class="bg-white w-full flex justify-center py-5">
     <div class="flex flex-col text-center">
       <img src={Bats.src} alt="" class="h-14" />
-      <h1 class="text-4xl">Meus projetos</h1>
+      <h1 class="text-4xl">Biblioteca</h1>
     </div>
   </div>
+
   <div class="bg-white flex justify-center py-10 gap-3">
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
+    <div
+      class="inline-flex max-sm:flex max-sm:flex-col max-sm:gap-3 gap-3 px-3"
+    >
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+    </div>
   </div>
 
   <footer>

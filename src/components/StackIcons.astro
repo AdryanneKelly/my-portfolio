@@ -3,9 +3,14 @@ interface Props {
   src: string
 }
 
-const {src} = Astro.props
+const { src } = Astro.props
+
+import Tumulo from '../images/tumulo_stack.png'
 ---
 
-<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-t-3xl w-12 border-t-2 border-b-2 border-b-gray-800">
-  <img src={src} alt="Imagem da stack" class="h-auto px-1 py-3" />
+<div
+  class="bg-[url('../src/images/tumulo_stack.png')] bg-cover w-36 h-32 justify-center"
+>
+  <img src={src} alt="Imagem da stack" class="pl-2 py-12 h-full w-full" />
+  <div class="bg-gray-400 h-2 w-full rounded-t-lg"></div>
 </div>
