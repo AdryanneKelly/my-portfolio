@@ -21,6 +21,9 @@ import Github from '../images/github.svg'
 import Bats from '../images/bats.svg'
 import ProjectCard from '../components/ProjectCard.astro'
 import BloodGif from '../images/blood.gif'
+import OrbeSite from '../images/orbe_site.jpeg'
+import ClothesRepair from '../images/clothes_repair_system.jpeg'
+import NlweSports from '../images/nlweSports.jpeg'
 ---
 
 <Layout title="Adryanne Kelly | Portifólio">
@@ -29,7 +32,7 @@ import BloodGif from '../images/blood.gif'
     class="max-w-full h-screen px-4 py-6 bg-[url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0545aac2-256b-4c9e-907a-1b1c8ef246de/dgc6ggs-e14f7965-43cb-4f2e-8184-14f925f301bf.png/v1/fill/w_1280,h_718,q_80,strp/fantasy_desktop_wallpaper_0421_by_grimwalds_ai_fantasy_dgc6ggs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMDU0NWFhYzItMjU2Yi00YzllLTkwN2EtMWIxYzhlZjI0NmRlXC9kZ2M2Z2dzLWUxNGY3OTY1LTQzY2ItNGYyZS04MTg0LTE0ZjkyNWYzMDFiZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SUh1-TwtpSchtCd8mcOmp77a2kxEysoth9Et-jm-OCc)] bg-cover"
   >
     <div
-      class="flex justify-between pt-24 px-32 max-md:px-12 max-sm:px-5 max-sm:pt-16"
+      class="flex justify-between pt-20 px-32 max-md:px-12 max-sm:px-5 max-sm:pt-36"
     >
       <div class="flex flex-col gap-5 text-white py-12 max-w-sm">
         <div>
@@ -156,10 +159,8 @@ import BloodGif from '../images/blood.gif'
   >
     <div class="flex flex-col text-center text-white max-sm:items-center">
       <img src={VampireLips.src} alt="" class="h-14" />
-      <h1 class="text-4xl">Presas</h1>
-      <div
-        class="inline-flex flex-row gap-5 pt-10 max-sm:flex-col"
-      >
+      <h1 class="text-4xl">Stacks</h1>
+      <div class="inline-flex flex-row gap-5 pt-10 max-sm:flex-col">
         <StackIcons src={Php.src} />
         <StackIcons src={Laravel.src} />
         <StackIcons src={Mysql.src} />
@@ -182,9 +183,24 @@ import BloodGif from '../images/blood.gif'
     <div
       class="inline-flex max-sm:flex max-sm:flex-col max-sm:gap-3 gap-3 px-3"
     >
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      <ProjectCard
+        project_name="Site Institucional - Orbe Telecom"
+        tags="#astrojs #tailwindcss"
+        href="https://orbetelecom.com.br/"
+        image={OrbeSite.src}
+      />
+      <ProjectCard
+        project_name="Clothes Repair - Sistema Web"
+        tags="#php #mysql #bootstrap"
+        href="#"
+        image={ClothesRepair.src}
+      />
+      <ProjectCard
+        project_name="Edição NLW eSports - Site"
+        tags="#html #css"
+        href="#"
+        image={NlweSports.src}
+      />
     </div>
   </div>
 

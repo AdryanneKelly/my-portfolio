@@ -1,5 +1,14 @@
 ---
 import BloodGif from '../images/blood.gif'
+
+interface Props {
+  project_name: string
+  tags: string
+  href: string
+  image: string
+}
+
+const {project_name, tags, href, image} = Astro.props
 ---
 
 <div
@@ -7,8 +16,8 @@ import BloodGif from '../images/blood.gif'
 >
   <a href="#">
     <img
-      class="rounded-t-lg"
-      src="https://wallpapercave.com/uwp/uwp403358.jpeg"
+      class="rounded-t-lg max-h-44 w-full"
+      src={image}
       alt=""
     />
   </a>
@@ -17,12 +26,12 @@ import BloodGif from '../images/blood.gif'
       <h5
         class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
       >
-        Nome do projeto
+        {project_name}
       </h5>
     </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Descrição</p>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{tags}</p>
     <a
-      href="#"
+    href=`${href}`
       class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-gray-950 focus:ring-4 focus:outline-none focus:ring-gray-500 dark:bg-redPrimaryColor dark:hover:bg-hoverRedPrimaryColor dark:focus:ring-redSecondaryColor"
     >
       Ver mais
